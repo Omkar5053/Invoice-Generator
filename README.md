@@ -55,7 +55,7 @@ The project includes a custom formatter:
 
 ```java
 public static String formatIndianNumber(double value);
-
+```
 ## 🇮🇳 Indian Number Format Support
 
 It ensures numbers are printed in the Indian style:
@@ -89,7 +89,7 @@ It ensures numbers are printed in the Indian style:
 ```bash
 git clone https://github.com/your-username/invoice-generator.git
 cd invoice-generator
-
+```
 
 ---
 
