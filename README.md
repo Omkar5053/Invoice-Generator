@@ -89,6 +89,10 @@ It ensures numbers are printed in the Indian style:
 ```bash
 git clone https://github.com/your-username/invoice-generator.git
 cd invoice-generator
+
+./mvnw clean install
+./mvnw spring-boot:run
+
 ```
 
 ---
