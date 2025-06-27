@@ -1,0 +1,701 @@
+<!--&lt;!&ndash; Created with Jaspersoft Studio version 7.0.3.final using JasperReports Library version 7.0.3-41034ca841d452f3305ba55b9042260aaa1ab5dd  &ndash;&gt;-->
+<!--<jasperReport name="invoice_template" language="java" pageWidth="595" pageHeight="842" columnWidth="555" leftMargin="20" rightMargin="20" topMargin="8" bottomMargin="2" uuid="eb1d8711-605b-442a-b56d-ce089f71500e">-->
+<!--	<property name="net.sf.jasperreports.export.character.encoding" value="UTF-8"/>-->
+<!--	<property name="net.sf.jasperreports.locale" value="en_IN"/>-->
+<!--	<property name="com.jaspersoft.studio.data.defaultdataadapter" value="One Empty Record"/>-->
+<!--	<parameter name="invoiceNo" class="java.lang.String"/>-->
+<!--	<parameter name="invoiceDate" class="java.lang.String"/>-->
+<!--	<parameter name="placeOfSupply" class="java.lang.String"/>-->
+<!--	<parameter name="GSTPercentage" class="java.lang.String"/>-->
+<!--	<parameter name="totalAmount" class="java.lang.Double"/>-->
+<!--	<parameter name="taxableAmount" class="java.lang.Double"/>-->
+<!--	<parameter name="IGSTAmt" class="java.lang.Double"/>-->
+<!--	<parameter name="HSN" class="java.lang.String"/>-->
+<!--	<parameter name="taxRate" class="java.lang.String"/>-->
+<!--	<parameter name="withoutTaxAmt" class="java.lang.Double"/>-->
+<!--	<parameter name="amountInWords" class="java.lang.String"/>-->
+<!--	<parameter name="expenseType" class="java.lang.String"/>-->
+<!--	<parameter name="clientInfo" class="java.lang.String"/>-->
+<!--	<query language="sql"><![CDATA[]]></query>-->
+<!--	<background splitType="Stretch"/>-->
+<!--	<title height="117" splitType="Stretch">-->
+<!--		<element kind="line" uuid="017bfb03-0dca-4915-a6a3-fc8a224d7d55" x="1" y="0" width="556" height="1">-->
+<!--			<property name="com.jaspersoft.studio.unit.x" value="px"/>-->
+<!--			<property name="com.jaspersoft.studio.unit.y" value="px"/>-->
+<!--		</element>-->
+<!--		<element kind="staticText" uuid="72d3168e-5827-4f54-a047-10a9f21bdc87" x="5" y="3" width="175" height="25" rotation="None" fontName="SansSerif" fontSize="12.0" bold="true" hTextAlign="Left">-->
+<!--			<text><![CDATA[GSTIN : 06AAIFE7247A134 ]]></text>-->
+<!--			<property name="com.jaspersoft.studio.unit.y" value="px"/>-->
+<!--		</element>-->
+<!--		<element kind="staticText" uuid="0b2153a8-e793-4494-bf89-6e70be965bdf" x="220" y="21" width="120" height="24" fontName="SansSerif" fontSize="16.0" underline="true">-->
+<!--			<text><![CDATA[TAX INVOICE]]></text>-->
+<!--		</element>-->
+<!--		<element kind="staticText" uuid="46625d34-ca19-47dd-ae7a-96369f1d8621" x="481" y="2" width="70" height="20" fontName="SansSerif" fontSize="11.0" italic="true">-->
+<!--			<text><![CDATA[Original Copy]]></text>-->
+<!--			<property name="com.jaspersoft.studio.unit.y" value="px"/>-->
+<!--		</element>-->
+<!--		<element kind="staticText" uuid="f3d705d7-4353-4226-a444-23a97cd8cc15" x="150" y="39" width="250" height="28" markup="none" fontName="SansSerif" fontSize="20.0" bold="true">-->
+<!--			<text><![CDATA[OMKAR JOURNEYS LLP]]></text>-->
+<!--			<property name="com.jaspersoft.studio.unit.x" value="px"/>-->
+<!--		</element>-->
+<!--		<element kind="staticText" uuid="4b8b096d-06e6-4f6c-80dd-30f99e61b27f" x="40" y="67" width="479" height="42" fontName="SansSerif" fontSize="14.0" hTextAlign="Center">-->
+<!--			<text><![CDATA[FLAT NO D - 3221, FIRST FLOOR,ORANGE FIELD COLONY, GHAZIABAD NOIDA, 102103]]></text>-->
+<!--			<property name="com.jaspersoft.studio.unit.y" value="px"/>-->
+<!--		</element>-->
+<!--		<element kind="line" uuid="948e328b-4c93-466b-800a-caf61a3eaeb2" x="1" y="0" width="1" height="117">-->
+<!--			<property name="com.jaspersoft.studio.unit.x" value="px"/>-->
+<!--			<property name="com.jaspersoft.studio.unit.y" value="px"/>-->
+<!--		</element>-->
+<!--		<element kind="line" uuid="11ae63fa-4ade-492e-a830-6a73f498c7ff" x="557" y="0" width="1" height="116">-->
+<!--			<property name="com.jaspersoft.studio.unit.x" value="px"/>-->
+<!--			<property name="com.jaspersoft.studio.unit.y" value="px"/>-->
+<!--		</element>-->
+<!--	</title>-->
+<!--	<pageHeader height="172">-->
+<!--		<element kind="staticText" uuid="6b319398-383c-4cc9-afe5-9eef5a5def93" x="5" y="101" width="85" height="35" fontName="SansSerif" fontSize="12.0">-->
+<!--			<text><![CDATA[Party State-->
+<!--GSTIN / UIN]]></text>-->
+<!--		</element>-->
+<!--		<element kind="staticText" uuid="d69c25c5-f6e1-4f81-875b-ff5d2bb4948e" x="105" y="99" width="24" height="23" fontName="SansSerif" fontSize="14.0" bold="true">-->
+<!--			<text><![CDATA[:]]></text>-->
+<!--		</element>-->
+<!--		<element kind="staticText" uuid="dfc5d7e2-9c4f-47dd-9bce-7481824ab686" x="122" y="102" width="100" height="34" fontName="SansSerif" fontSize="12.0">-->
+<!--			<text><![CDATA[Noida (07)-->
+<!--DASDSD3442342]]></text>-->
+<!--		</element>-->
+<!--		<element kind="staticText" uuid="89e9eae1-9ea0-4fba-ae61-dc93e8a2e269" x="5" y="9" width="240" height="84" fontName="SansSerif" fontSize="12.0">-->
+<!--			<text><![CDATA[OMKAR INDIA PVT LTD, PRO.-->
+<!--NO.D-40A, 2ND FLOOR, OMKAR-->
+<!--SINGH ENCLAVE, NOIDA-->
+<!--SOUTH NOIDA-->
+<!--110220-->
+
+<!--]]></text>-->
+<!--		</element>-->
+<!--		<element kind="staticText" uuid="58a891d8-443d-46da-a371-b394cb276efc" x="5" y="-8" width="110" height="20" fontName="SansSerif" fontSize="12.0" italic="true" bold="true">-->
+<!--			<text><![CDATA[Party Details :]]></text>-->
+<!--		</element>-->
+<!--		<element kind="staticText" uuid="343e0975-1dd7-4c75-87cd-f095f8377811" x="283" y="73" width="110" height="22" fontName="SansSerif" fontSize="14.0">-->
+<!--			<text><![CDATA[Reverse Charge]]></text>-->
+<!--		</element>-->
+<!--		<element kind="staticText" uuid="5281ea41-d863-400d-80e0-dd399c339c8b" x="283" y="49" width="110" height="22" fontName="SansSerif" fontSize="14.0">-->
+<!--			<text><![CDATA[Place of Supply]]></text>-->
+<!--		</element>-->
+<!--		<element kind="staticText" uuid="b9ca753d-604c-45c3-a5e9-7081a29e2e11" x="283" y="-2" width="91" height="20" fontName="SansSerif" fontSize="14.0">-->
+<!--			<text><![CDATA[Invoice No.]]></text>-->
+<!--		</element>-->
+<!--		<element kind="staticText" uuid="066a8f49-2d93-4911-a868-039d253f77a5" x="283" y="24" width="86" height="19" fontName="SansSerif" fontSize="14.0">-->
+<!--			<text><![CDATA[Dated]]></text>-->
+<!--		</element>-->
+<!--		<element kind="staticText" uuid="a147c54d-add5-4583-8b00-220493669a57" x="105" y="114" width="15" height="23" fontName="SansSerif" fontSize="14.0" bold="true">-->
+<!--			<text><![CDATA[:]]></text>-->
+<!--		</element>-->
+<!--		<element kind="textField" uuid="742914b8-60ac-44de-8ad5-a041199f93c9" x="424" y="-2" width="130" height="19" fontName="SansSerif" fontSize="13.0">-->
+<!--			<expression><![CDATA[$P{invoiceNo}]]></expression>-->
+<!--		</element>-->
+<!--		<element kind="textField" uuid="17914580-26a9-4d78-a52a-5605806718c1" x="424" y="24" width="130" height="18" fontName="SansSerif" fontSize="13.0">-->
+<!--			<expression><![CDATA[$P{invoiceDate}]]></expression>-->
+<!--		</element>-->
+<!--		<element kind="textField" uuid="41d881a2-3a6a-4ac4-9cfe-d65b91585a5b" x="424" y="49" width="100" height="22" fontName="SansSerif" fontSize="13.0">-->
+<!--			<expression><![CDATA[$P{placeOfSupply}]]></expression>-->
+<!--		</element>-->
+<!--		<element kind="staticText" uuid="2e97416c-a83f-4175-9a16-ac2f786e6060" x="424" y="74" width="66" height="22" fontName="SansSerif" fontSize="13.0" bold="false" hTextAlign="Left">-->
+<!--			<text><![CDATA[N]]></text>-->
+<!--		</element>-->
+<!--		<element kind="staticText" uuid="215e8b5a-7a76-49d8-a238-b367ddc7781f" x="405" y="-2" width="10" height="23" fontName="SansSerif" fontSize="14.0" bold="true">-->
+<!--			<text><![CDATA[:]]></text>-->
+<!--		</element>-->
+<!--		<element kind="staticText" uuid="50a020e0-8e51-4668-937d-8b898b10ec9a" x="405" y="24" width="15" height="23" fontName="SansSerif" fontSize="14.0" bold="true">-->
+<!--			<text><![CDATA[:]]></text>-->
+<!--		</element>-->
+<!--		<element kind="staticText" uuid="a55f2c3b-3486-4b04-9e42-b2598f7ad699" x="405" y="49" width="16" height="23" fontName="SansSerif" fontSize="14.0" bold="true">-->
+<!--			<text><![CDATA[:]]></text>-->
+<!--		</element>-->
+<!--		<element kind="staticText" uuid="0e929dfb-822a-4a95-aa2b-93a6fbed835c" x="405" y="73" width="18" height="23" fontName="SansSerif" fontSize="14.0" bold="true">-->
+<!--			<text><![CDATA[:]]></text>-->
+<!--		</element>-->
+<!--		<element kind="line" uuid="b78ae969-f877-4d3e-8b3b-781f314426b0" x="280" y="-10" width="1" height="143">-->
+<!--			<property name="com.jaspersoft.studio.unit.x" value="px"/>-->
+<!--			<property name="com.jaspersoft.studio.unit.y" value="px"/>-->
+<!--		</element>-->
+<!--		<element kind="line" uuid="e8549cc4-d10b-43d2-99f9-b19bb6dbd8b4" x="1" y="148" width="557" height="1">-->
+<!--			<property name="com.jaspersoft.studio.unit.x" value="px"/>-->
+<!--			<property name="com.jaspersoft.studio.unit.y" value="px"/>-->
+<!--		</element>-->
+<!--		<element kind="line" uuid="97c878be-a170-4a5a-a426-bd6ce5412d4a" x="557" y="0" width="1" height="168">-->
+<!--			<property name="com.jaspersoft.studio.unit.x" value="px"/>-->
+<!--			<property name="com.jaspersoft.studio.unit.y" value="px"/>-->
+<!--		</element>-->
+<!--		<element kind="line" uuid="403710f8-6e98-44e6-9011-db769a23c2ab" x="1" y="0" width="1" height="172">-->
+<!--			<property name="com.jaspersoft.studio.unit.x" value="px"/>-->
+<!--			<property name="com.jaspersoft.studio.unit.y" value="px"/>-->
+<!--		</element>-->
+<!--		<element kind="line" uuid="bca33b3c-853e-4535-bb77-9d783421d146" x="2" y="-11" width="556" height="1">-->
+<!--			<property name="com.jaspersoft.studio.unit.x" value="px"/>-->
+<!--			<property name="com.jaspersoft.studio.unit.y" value="px"/>-->
+<!--		</element>-->
+<!--		<property name="com.jaspersoft.studio.unit.height" value="px"/>-->
+<!--	</pageHeader>-->
+<!--	<detail>-->
+<!--		<band height="515" splitType="Stretch">-->
+<!--			<element kind="line" uuid="84672dc4-c537-4153-abc7-8034f9b0db92" x="1" y="-39" width="556" height="1">-->
+<!--				<property name="com.jaspersoft.studio.unit.x" value="px"/>-->
+<!--				<property name="com.jaspersoft.studio.unit.y" value="px"/>-->
+<!--			</element>-->
+<!--			<element kind="line" uuid="0e3ce067-ea4f-4492-bbf4-f402e3f31142" x="557" y="-56" width="1" height="298">-->
+<!--				<property name="com.jaspersoft.studio.unit.x" value="px"/>-->
+<!--				<property name="com.jaspersoft.studio.unit.y" value="px"/>-->
+<!--			</element>-->
+<!--			<element kind="line" uuid="47f058c3-cfff-4de4-8613-68cad4db1c84" x="1" y="6" width="556" height="1">-->
+<!--				<property name="com.jaspersoft.studio.unit.x" value="px"/>-->
+<!--				<property name="com.jaspersoft.studio.unit.y" value="px"/>-->
+<!--			</element>-->
+<!--			<element kind="staticText" uuid="ca231aba-1a72-4152-866f-3efd03523fd2" x="8" y="-22" width="32" height="20" fontSize="15.0" bold="true" hTextAlign="Left">-->
+<!--				<text><![CDATA[S.N.]]></text>-->
+<!--			</element>-->
+<!--			<element kind="line" uuid="3c6afe5d-77ab-475a-b521-88607bc81700" x="320" y="-23" width="1" height="231">-->
+<!--				<property name="com.jaspersoft.studio.unit.x" value="px"/>-->
+<!--				<property name="com.jaspersoft.studio.unit.y" value="px"/>-->
+<!--			</element>-->
+<!--			<element kind="line" uuid="19d2a7cb-62a0-4b06-a3a2-c885a87940a4" x="445" y="-23" width="1" height="311">-->
+<!--				<property name="com.jaspersoft.studio.unit.x" value="px"/>-->
+<!--				<property name="com.jaspersoft.studio.unit.y" value="px"/>-->
+<!--			</element>-->
+<!--			<element kind="line" uuid="648ae784-272f-4bd1-b4c5-90b20b4766f7" x="374" y="-24" width="1" height="233">-->
+<!--				<property name="com.jaspersoft.studio.unit.x" value="px"/>-->
+<!--				<property name="com.jaspersoft.studio.unit.y" value="px"/>-->
+<!--			</element>-->
+<!--			<element kind="line" uuid="b2e56def-e9b8-4a49-b50b-d69a7452f049" x="40" y="-23" width="1" height="231">-->
+<!--				<property name="com.jaspersoft.studio.unit.x" value="px"/>-->
+<!--				<property name="com.jaspersoft.studio.unit.y" value="px"/>-->
+<!--			</element>-->
+<!--			<element kind="line" uuid="65261dc2-17cd-4dee-82e7-e8a892602b7e" x="206" y="-23" width="1" height="231">-->
+<!--				<property name="com.jaspersoft.studio.unit.x" value="px"/>-->
+<!--				<property name="com.jaspersoft.studio.unit.y" value="px"/>-->
+<!--			</element>-->
+<!--			<element kind="line" uuid="a5c54b6f-f996-4057-a504-0b9cd83121b2" x="270" y="-23" width="1" height="231">-->
+<!--				<property name="com.jaspersoft.studio.unit.x" value="px"/>-->
+<!--				<property name="com.jaspersoft.studio.unit.y" value="px"/>-->
+<!--			</element>-->
+<!--			<element kind="staticText" uuid="7938788d-3ab5-4f9e-866d-7f579a6d93f8" x="53" y="-21" width="144" height="20" fontSize="14.0" bold="true">-->
+<!--				<text><![CDATA[Description of Goods]]></text>-->
+<!--			</element>-->
+<!--			<element kind="line" uuid="e442c16a-a372-4f01-aaab-aeea7268aeb7" x="1" y="209" width="556" height="1">-->
+<!--				<property name="com.jaspersoft.studio.unit.x" value="px"/>-->
+<!--				<property name="com.jaspersoft.studio.unit.y" value="px"/>-->
+<!--			</element>-->
+<!--			<element kind="line" uuid="07d84337-894b-46c4-8ee7-9ac53ec7c93a" x="1" y="257" width="556" height="1">-->
+<!--				<property name="com.jaspersoft.studio.unit.x" value="px"/>-->
+<!--				<property name="com.jaspersoft.studio.unit.y" value="px"/>-->
+<!--			</element>-->
+<!--			<element kind="staticText" uuid="8d6b692e-5bcb-4e93-8159-27e602f49679" x="211" y="-23" width="59" height="38" fontSize="12.0" bold="true">-->
+<!--				<text><![CDATA[HSN/SAC Code]]></text>-->
+<!--			</element>-->
+<!--			<element kind="staticText" uuid="5208fbcf-d2fc-4fb8-a304-321001274d98" x="287" y="-21" width="32" height="20" fontSize="14.0" bold="true">-->
+<!--				<text><![CDATA[Qty.]]></text>-->
+<!--			</element>-->
+<!--			<element kind="staticText" uuid="a21492b4-0e06-497b-90a9-76de43c4f0b7" x="334" y="-20" width="32" height="26" fontSize="14.0" bold="true">-->
+<!--				<text><![CDATA[Unit]]></text>-->
+<!--			</element>-->
+<!--			<element kind="staticText" uuid="7d0a6b95-dd3f-4a8c-bab0-6a12ac93db45" x="391" y="-20" width="40" height="19" fontSize="14.0" bold="true">-->
+<!--				<text><![CDATA[Price]]></text>-->
+<!--			</element>-->
+<!--			<element kind="staticText" uuid="9574597f-0893-4956-9e5e-5dccd688e895" x="467" y="-20" width="80" height="19" fontSize="14.0" bold="true">-->
+<!--				<text><![CDATA[Amount (`)]]></text>-->
+<!--			</element>-->
+<!--			<element kind="staticText" uuid="650ea140-50b4-4ff9-948a-6a0d77bdec21" x="102" y="232" width="120" height="20" fontSize="14.0" italic="true">-->
+<!--				<text><![CDATA[Add   :   IGST]]></text>-->
+<!--			</element>-->
+<!--			<element kind="staticText" uuid="e5229c89-7ee5-4444-89ed-bd5cda989e82" x="344" y="232" width="35" height="20" fontSize="14.0" italic="true">-->
+<!--				<text><![CDATA[@]]></text>-->
+<!--			</element>-->
+<!--			<element kind="line" uuid="fa3bde23-9aaf-45ea-b798-354340b32648" x="445" y="288" width="112" height="1">-->
+<!--				<property name="com.jaspersoft.studio.unit.x" value="px"/>-->
+<!--				<property name="com.jaspersoft.studio.unit.y" value="px"/>-->
+<!--			</element>-->
+<!--			<element kind="textField" uuid="d6e61e01-ffb9-4d7e-97bd-e99639f66be3" x="449" y="17" width="105" height="70" fontSize="16.0" pattern="#,##,##0.00">-->
+<!--				<paragraph rightIndent="5"/>-->
+<!--				<expression><![CDATA[$P{totalAmount}]]></expression>-->
+<!--				<property name="com.jaspersoft.studio.unit.rightIndent" value="px"/>-->
+<!--			</element>-->
+<!--			<element kind="textField" uuid="2fadf40a-0223-4bda-af10-ff86ca1047f6" x="449" y="261" width="105" height="26" markup="none" fontSize="16.0" pattern="#,##,##0.00">-->
+<!--				<paragraph rightIndent="5"/>-->
+<!--				<expression><![CDATA[$P{totalAmount}]]></expression>-->
+<!--				<property name="com.jaspersoft.studio.unit.rightIndent" value="px"/>-->
+<!--			</element>-->
+<!--			<element kind="staticText" uuid="6ef614cf-0953-4a2b-950a-b354acfbdbcf" x="356" y="264" width="90" height="20" fontSize="13.0" bold="true">-->
+<!--				<text><![CDATA[Grand Total]]></text>-->
+<!--			</element>-->
+<!--			<element kind="textField" uuid="9a25059f-8094-472b-85e1-b2f48264d182" x="449" y="234" width="108" height="23" fontSize="14.0" pattern="#,##,##0.00">-->
+<!--				<paragraph rightIndent="5"/>-->
+<!--				<expression><![CDATA[$P{IGSTAmt}]]></expression>-->
+<!--				<property name="com.jaspersoft.studio.unit.rightIndent" value="px"/>-->
+<!--			</element>-->
+<!--			<element kind="textField" uuid="1a95728f-decd-4f5d-8a3e-4894a3696762" x="449" y="211" width="108" height="23" markup="none" fontSize="15.0" pattern="#,##,##0.00" bold="true">-->
+<!--				<paragraph rightIndent="5"/>-->
+<!--				<expression><![CDATA[$P{withoutTaxAmt}]]></expression>-->
+<!--				<property name="com.jaspersoft.studio.unit.firstLineIndent" value="pixel"/>-->
+<!--				<property name="com.jaspersoft.studio.unit.rightIndent" value="px"/>-->
+<!--			</element>-->
+<!--			<element kind="textField" uuid="ae36333c-0029-43f6-bc10-539e063aea48" x="370" y="233" width="62" height="19" fontSize="14.0" italic="true">-->
+<!--				<expression><![CDATA[$P{GSTPercentage}]]></expression>-->
+<!--			</element>-->
+<!--			<element kind="line" uuid="31f68669-2a52-4599-8764-9defd92d8949" x="1" y="503" width="557" height="1">-->
+<!--				<property name="com.jaspersoft.studio.unit.x" value="px"/>-->
+<!--				<property name="com.jaspersoft.studio.unit.y" value="px"/>-->
+<!--			</element>-->
+<!--			<element kind="line" uuid="5b021140-2569-4e12-bccd-ad1c555c1eab" x="1" y="374" width="556" height="1">-->
+<!--				<property name="com.jaspersoft.studio.unit.x" value="px"/>-->
+<!--				<property name="com.jaspersoft.studio.unit.y" value="px"/>-->
+<!--			</element>-->
+<!--			<element kind="line" uuid="6a67303b-9bc7-45c6-a448-68a14429414a" x="279" y="374" width="1" height="129">-->
+<!--				<property name="com.jaspersoft.studio.unit.x" value="px"/>-->
+<!--				<property name="com.jaspersoft.studio.unit.y" value="px"/>-->
+<!--			</element>-->
+<!--			<element kind="line" uuid="af95c62f-6847-42cc-a219-d89866098c51" x="279" y="425" width="279" height="1">-->
+<!--				<property name="com.jaspersoft.studio.unit.x" value="px"/>-->
+<!--				<property name="com.jaspersoft.studio.unit.y" value="px"/>-->
+<!--			</element>-->
+<!--			<element kind="textField" uuid="01852a38-ca20-4e71-8fb1-c1ec2e1f914b" x="212" y="17" width="58" height="22" fontSize="14.0">-->
+<!--				<expression><![CDATA[$P{HSN}]]></expression>-->
+<!--			</element>-->
+<!--			<element kind="staticText" uuid="eb92c736-2670-4755-9d04-194802cfd613" x="23" y="17" width="16" height="22" fontName="Calibri" fontSize="14.0">-->
+<!--				<text><![CDATA[1.]]></text>-->
+<!--			</element>-->
+<!--			<element kind="textField" uuid="57252543-c6d4-4059-80ba-e4e12cb57574" x="47" y="17" width="150" height="22" fontSize="14.0">-->
+<!--				<expression><![CDATA[$P{expenseType}]]></expression>-->
+<!--			</element>-->
+<!--			<element kind="textField" uuid="4c960c94-0992-4453-ae2b-ba9836dde849" x="66" y="33" width="140" height="27" fontSize="12.0" italic="true">-->
+<!--				<expression><![CDATA[$P{clientInfo}]]></expression>-->
+<!--			</element>-->
+<!--			<element kind="staticText" uuid="e80117f2-a629-4f2b-be20-90ea8c8cba97" x="305" y="17" width="15" height="30" fontSize="13.0">-->
+<!--				<text><![CDATA[&#45;&#45;]]></text>-->
+<!--			</element>-->
+<!--			<element kind="staticText" uuid="c7f08fb7-3d70-438e-b954-a56a104dcf8f" x="327" y="17" width="14" height="30" fontSize="13.0">-->
+<!--				<text><![CDATA[&#45;&#45;]]></text>-->
+<!--			</element>-->
+<!--			<element kind="staticText" uuid="0fb6aed7-c950-432a-8aca-aea46cec6ffb" x="432" y="17" width="12" height="30" fontSize="13.0">-->
+<!--				<text><![CDATA[&#45;&#45;]]></text>-->
+<!--			</element>-->
+<!--			<element kind="staticText" uuid="60e9ed95-1049-43bc-b507-e81fa86145cd" x="8" y="380" width="146" height="16" fontName="Arial" fontSize="13.0" underline="false" bold="true">-->
+<!--				<paragraph lineSpacingSize="1.0"/>-->
+<!--				<text><![CDATA[Terms & Conditions]]></text>-->
+<!--			</element>-->
+<!--			<element kind="staticText" uuid="73fcbd1d-5c0c-46b6-9524-c3f2a2586121" x="9" y="397" width="114" height="20" fontName="SansSerif" fontSize="15.0">-->
+<!--				<text><![CDATA[E.& O.E.]]></text>-->
+<!--			</element>-->
+<!--			<element kind="staticText" uuid="7b4feb6b-f464-449c-8828-392a12eb1b1c" x="7" y="446" width="251" height="51" markup="none" fontName="SansSerif" fontSize="12.0" vTextAlign="Top">-->
+<!--				<paragraph lineSpacing="Single" lineSpacingSize="1.5"/>-->
+<!--				<text><![CDATA[1. Interest @ 18% p.a. will be charged if the     payment is not made with in the stipulated time-->
+<!--2. Subject to 'Haryana' Jurisdiction only.]]></text>-->
+<!--			</element>-->
+<!--			<element kind="staticText" uuid="1a4e49b3-6bbb-47f8-a7c9-24e1e1835f24" x="283" y="377" width="176" height="20" fontSize="12.0" bold="true">-->
+<!--				<text><![CDATA[Receiver's Signature   :  ]]></text>-->
+<!--			</element>-->
+<!--			<element kind="staticText" uuid="26dd0420-1529-4ce0-a5b3-462d07b0b33f" x="366" y="431" width="188" height="27" fontSize="14.0" bold="true">-->
+<!--				<text><![CDATA[for OMKAR JOURNEYS LLP]]></text>-->
+<!--			</element>-->
+<!--			<element kind="staticText" uuid="eb0723e8-7212-4382-a97f-aaa04402c597" x="420" y="479" width="134" height="20" fontSize="13.0" bold="true">-->
+<!--				<text><![CDATA[Authorised Signatory]]></text>-->
+<!--			</element>-->
+<!--			<element kind="staticText" uuid="2acc0367-70a2-458e-8075-5bb16b89afc6" x="8" y="351" width="55" height="22" fontSize="13.0" bold="true">-->
+<!--				<text><![CDATA[Rupees]]></text>-->
+<!--			</element>-->
+<!--			<element kind="textField" uuid="62b50361-1a12-4da2-b670-d187ed3d44a5" x="64" y="351" width="476" height="23" markup="none" fontSize="13.0" bold="true">-->
+<!--				<expression><![CDATA[$P{amountInWords}]]></expression>-->
+<!--			</element>-->
+<!--			<element kind="staticText" uuid="d10dddf4-bf08-41b7-ae08-ea6f37d67c77" x="8" y="292" width="538" height="20" fontSize="12.0" underline="false" bold="true">-->
+<!--				<text><![CDATA[HSN/SAC     Tax Rate     Taxable Amt.     IGST Amt.     Total Tax]]></text>-->
+<!--			</element>-->
+<!--			<element kind="textField" uuid="36eb48f1-5ec0-4436-939a-5818e6d31f37" x="9" y="310" width="56" height="20" fontSize="13.0">-->
+<!--				<expression><![CDATA[$P{HSN}]]></expression>-->
+<!--			</element>-->
+<!--			<element kind="textField" uuid="ed8e21ad-4d2c-45f6-9399-83560089eb4d" x="81" y="310" width="41" height="20" fontSize="13.0">-->
+<!--				<expression><![CDATA[$P{taxRate}]]></expression>-->
+<!--			</element>-->
+<!--			<element kind="textField" uuid="c6720161-ca53-4e92-9f41-303d58534acd" x="145" y="310" width="93" height="19" fontSize="13.0" pattern="#,##,##0.00">-->
+<!--				<expression><![CDATA[$P{taxableAmount}]]></expression>-->
+<!--			</element>-->
+<!--			<element kind="textField" uuid="2bef404a-3045-48cf-8db5-305ce4cccba8" x="238" y="310" width="67" height="20" fontSize="13.0" pattern="#,##,##0.00">-->
+<!--				<expression><![CDATA[$P{IGSTAmt}]]></expression>-->
+<!--			</element>-->
+<!--			<element kind="textField" uuid="4417e42d-ded5-4c3a-8148-7e096ff8a74c" x="317" y="310" width="106" height="20" fontSize="13.0" pattern="#,##,##0.00">-->
+<!--				<expression><![CDATA[$P{IGSTAmt}]]></expression>-->
+<!--			</element>-->
+<!--			<element kind="line" uuid="7028630e-b585-4feb-b899-14ea3cf6bc3d" x="1" y="237" width="1" height="266">-->
+<!--				<property name="com.jaspersoft.studio.unit.x" value="px"/>-->
+<!--				<property name="com.jaspersoft.studio.unit.y" value="px"/>-->
+<!--			</element>-->
+<!--			<element kind="line" uuid="c30e7208-35cb-4d1c-a384-bffd5dfaedc0" x="557" y="241" width="1" height="262">-->
+<!--				<property name="com.jaspersoft.studio.unit.x" value="px"/>-->
+<!--				<property name="com.jaspersoft.studio.unit.y" value="px"/>-->
+<!--			</element>-->
+<!--			<element kind="line" uuid="eeccf6eb-b406-4670-bfb8-a91de2826f10" x="1" y="-28" width="1" height="267">-->
+<!--				<property name="com.jaspersoft.studio.unit.x" value="px"/>-->
+<!--				<property name="com.jaspersoft.studio.unit.y" value="px"/>-->
+<!--			</element>-->
+<!--			<element kind="line" uuid="bfe94802-9c9b-460a-a4b0-4bc4488374a7" x="9" y="307" width="362" height="1">-->
+<!--				<property name="com.jaspersoft.studio.unit.x" value="px"/>-->
+<!--				<property name="com.jaspersoft.studio.unit.y" value="px"/>-->
+<!--			</element>-->
+<!--			<element kind="line" uuid="6cd4fa1a-b9f6-4e2c-bf4d-f7c95554a2ba" x="10" y="396" width="119" height="1">-->
+<!--				<property name="com.jaspersoft.studio.unit.x" value="px"/>-->
+<!--				<property name="com.jaspersoft.studio.unit.y" value="px"/>-->
+<!--				<pen lineWidth="0.5"/>-->
+<!--			</element>-->
+<!--		</band>-->
+<!--	</detail>-->
+<!--</jasperReport>-->
+
+
+
+
+<!-- Created with Jaspersoft Studio version 7.0.3.final using JasperReports Library version 7.0.3-41034ca841d452f3305ba55b9042260aaa1ab5dd  -->
+<jasperReport name="invoice_template" language="java" pageWidth="595" pageHeight="842" columnWidth="555" leftMargin="20" rightMargin="20" topMargin="8" bottomMargin="2" uuid="eb1d8711-605b-442a-b56d-ce089f71500e">
+	<property name="net.sf.jasperreports.export.character.encoding" value="UTF-8"/>
+	<property name="net.sf.jasperreports.locale" value="en_IN"/>
+	<property name="com.jaspersoft.studio.data.defaultdataadapter" value="One Empty Record"/>
+	<parameter name="invoiceNo" class="java.lang.String"/>
+	<parameter name="invoiceDate" class="java.lang.String"/>
+	<parameter name="placeOfSupply" class="java.lang.String"/>
+	<parameter name="GSTPercentage" class="java.lang.String"/>
+	<parameter name="totalAmount" class="java.lang.String"/>
+	<parameter name="taxableAmount" class="java.lang.String"/>
+	<parameter name="IGSTAmt" class="java.lang.String"/>
+	<parameter name="HSN" class="java.lang.String"/>
+	<parameter name="taxRate" class="java.lang.String"/>
+	<parameter name="withoutTaxAmt" class="java.lang.String"/>
+	<parameter name="amountInWords" class="java.lang.String"/>
+	<parameter name="expenseType" class="java.lang.String"/>
+	<parameter name="clientInfo" class="java.lang.String"/>
+	<query language="sql"><![CDATA[]]></query>
+	<background splitType="Stretch"/>
+	<title height="117" splitType="Stretch">
+		<element kind="line" uuid="017bfb03-0dca-4915-a6a3-fc8a224d7d55" x="1" y="0" width="556" height="1">
+			<property name="com.jaspersoft.studio.unit.x" value="px"/>
+			<property name="com.jaspersoft.studio.unit.y" value="px"/>
+		</element>
+		<element kind="staticText" uuid="72d3168e-5827-4f54-a047-10a9f21bdc87" x="5" y="3" width="175" height="25" rotation="None" fontName="SansSerif" fontSize="12.0" bold="true" hTextAlign="Left">
+			<text><![CDATA[GSTIN : 06AAIFE7247A134 ]]></text>
+			<property name="com.jaspersoft.studio.unit.y" value="px"/>
+		</element>
+		<element kind="staticText" uuid="0b2153a8-e793-4494-bf89-6e70be965bdf" x="220" y="21" width="120" height="24" fontName="SansSerif" fontSize="16.0" underline="true">
+			<text><![CDATA[TAX INVOICE]]></text>
+		</element>
+		<element kind="staticText" uuid="46625d34-ca19-47dd-ae7a-96369f1d8621" x="481" y="2" width="70" height="20" fontName="SansSerif" fontSize="11.0" italic="true">
+			<text><![CDATA[Original Copy]]></text>
+			<property name="com.jaspersoft.studio.unit.y" value="px"/>
+		</element>
+		<element kind="staticText" uuid="f3d705d7-4353-4226-a444-23a97cd8cc15" x="150" y="39" width="250" height="28" markup="none" fontName="SansSerif" fontSize="20.0" bold="true">
+			<text><![CDATA[OMKAR JOURNEYS LLP]]></text>
+			<property name="com.jaspersoft.studio.unit.x" value="px"/>
+		</element>
+		<element kind="staticText" uuid="4b8b096d-06e6-4f6c-80dd-30f99e61b27f" x="40" y="67" width="479" height="42" fontName="SansSerif" fontSize="14.0" hTextAlign="Center">
+			<text><![CDATA[FLAT NO D - 3221, FIRST FLOOR,ORANGE FIELD COLONY, GHAZIABAD NOIDA, 102103]]></text>
+			<property name="com.jaspersoft.studio.unit.y" value="px"/>
+		</element>
+		<element kind="line" uuid="948e328b-4c93-466b-800a-caf61a3eaeb2" x="1" y="0" width="1" height="117">
+			<property name="com.jaspersoft.studio.unit.x" value="px"/>
+			<property name="com.jaspersoft.studio.unit.y" value="px"/>
+		</element>
+		<element kind="line" uuid="11ae63fa-4ade-492e-a830-6a73f498c7ff" x="557" y="0" width="1" height="116">
+			<property name="com.jaspersoft.studio.unit.x" value="px"/>
+			<property name="com.jaspersoft.studio.unit.y" value="px"/>
+		</element>
+	</title>
+	<pageHeader height="172">
+		<element kind="staticText" uuid="6b319398-383c-4cc9-afe5-9eef5a5def93" x="5" y="101" width="85" height="35" fontName="SansSerif" fontSize="12.0">
+			<text><![CDATA[Party State
+GSTIN / UIN]]></text>
+		</element>
+		<element kind="staticText" uuid="d69c25c5-f6e1-4f81-875b-ff5d2bb4948e" x="105" y="99" width="24" height="23" fontName="SansSerif" fontSize="14.0" bold="true">
+			<text><![CDATA[:]]></text>
+		</element>
+		<element kind="staticText" uuid="dfc5d7e2-9c4f-47dd-9bce-7481824ab686" x="122" y="102" width="100" height="34" fontName="SansSerif" fontSize="12.0">
+			<text><![CDATA[Noida (07)
+DASDSD3442342]]></text>
+		</element>
+		<element kind="staticText" uuid="89e9eae1-9ea0-4fba-ae61-dc93e8a2e269" x="5" y="9" width="240" height="84" fontName="SansSerif" fontSize="12.0">
+			<text><![CDATA[OMKAR INDIA PVT LTD, PRO.
+NO.D-40A, 2ND FLOOR, OMKAR
+SINGH ENCLAVE, NOIDA
+SOUTH NOIDA
+110220
+
+]]></text>
+		</element>
+		<element kind="staticText" uuid="58a891d8-443d-46da-a371-b394cb276efc" x="5" y="-8" width="110" height="20" fontName="SansSerif" fontSize="12.0" bold="true" italic="true">
+			<text><![CDATA[Party Details :]]></text>
+		</element>
+		<element kind="staticText" uuid="343e0975-1dd7-4c75-87cd-f095f8377811" x="283" y="73" width="110" height="22" fontName="SansSerif" fontSize="14.0">
+			<text><![CDATA[Reverse Charge]]></text>
+		</element>
+		<element kind="staticText" uuid="5281ea41-d863-400d-80e0-dd399c339c8b" x="283" y="49" width="110" height="22" fontName="SansSerif" fontSize="14.0">
+			<text><![CDATA[Place of Supply]]></text>
+		</element>
+		<element kind="staticText" uuid="b9ca753d-604c-45c3-a5e9-7081a29e2e11" x="283" y="-2" width="91" height="20" fontName="SansSerif" fontSize="14.0">
+			<text><![CDATA[Invoice No.]]></text>
+		</element>
+		<element kind="staticText" uuid="066a8f49-2d93-4911-a868-039d253f77a5" x="283" y="24" width="86" height="19" fontName="SansSerif" fontSize="14.0">
+			<text><![CDATA[Dated]]></text>
+		</element>
+		<element kind="staticText" uuid="a147c54d-add5-4583-8b00-220493669a57" x="105" y="114" width="15" height="23" fontName="SansSerif" fontSize="14.0" bold="true">
+			<text><![CDATA[:]]></text>
+		</element>
+		<element kind="textField" uuid="742914b8-60ac-44de-8ad5-a041199f93c9" x="424" y="-1" width="130" height="19" fontName="SansSerif" fontSize="13.0">
+			<expression><![CDATA[$P{invoiceNo}]]></expression>
+		</element>
+		<element kind="textField" uuid="17914580-26a9-4d78-a52a-5605806718c1" x="424" y="25" width="130" height="18" fontName="SansSerif" fontSize="13.0">
+			<expression><![CDATA[$P{invoiceDate}]]></expression>
+		</element>
+		<element kind="textField" uuid="41d881a2-3a6a-4ac4-9cfe-d65b91585a5b" x="424" y="50" width="100" height="22" fontName="SansSerif" fontSize="13.0">
+			<expression><![CDATA[$P{placeOfSupply}]]></expression>
+		</element>
+		<element kind="staticText" uuid="2e97416c-a83f-4175-9a16-ac2f786e6060" x="424" y="75" width="66" height="22" fontName="SansSerif" fontSize="13.0" bold="false" hTextAlign="Left">
+			<text><![CDATA[N]]></text>
+		</element>
+		<element kind="staticText" uuid="215e8b5a-7a76-49d8-a238-b367ddc7781f" x="405" y="-2" width="10" height="23" fontName="SansSerif" fontSize="14.0" bold="true">
+			<text><![CDATA[:]]></text>
+		</element>
+		<element kind="staticText" uuid="50a020e0-8e51-4668-937d-8b898b10ec9a" x="405" y="24" width="15" height="23" fontName="SansSerif" fontSize="14.0" bold="true">
+			<text><![CDATA[:]]></text>
+		</element>
+		<element kind="staticText" uuid="a55f2c3b-3486-4b04-9e42-b2598f7ad699" x="405" y="49" width="16" height="23" fontName="SansSerif" fontSize="14.0" bold="true">
+			<text><![CDATA[:]]></text>
+		</element>
+		<element kind="staticText" uuid="0e929dfb-822a-4a95-aa2b-93a6fbed835c" x="405" y="73" width="18" height="23" fontName="SansSerif" fontSize="14.0" bold="true">
+			<text><![CDATA[:]]></text>
+		</element>
+		<element kind="line" uuid="b78ae969-f877-4d3e-8b3b-781f314426b0" x="280" y="-10" width="1" height="143">
+			<property name="com.jaspersoft.studio.unit.x" value="px"/>
+			<property name="com.jaspersoft.studio.unit.y" value="px"/>
+		</element>
+		<element kind="line" uuid="e8549cc4-d10b-43d2-99f9-b19bb6dbd8b4" x="1" y="148" width="557" height="1">
+			<property name="com.jaspersoft.studio.unit.x" value="px"/>
+			<property name="com.jaspersoft.studio.unit.y" value="px"/>
+		</element>
+		<element kind="line" uuid="97c878be-a170-4a5a-a426-bd6ce5412d4a" x="557" y="-1" width="1" height="169">
+			<property name="com.jaspersoft.studio.unit.x" value="px"/>
+			<property name="com.jaspersoft.studio.unit.y" value="px"/>
+		</element>
+		<element kind="line" uuid="403710f8-6e98-44e6-9011-db769a23c2ab" x="1" y="0" width="1" height="172">
+			<property name="com.jaspersoft.studio.unit.x" value="px"/>
+			<property name="com.jaspersoft.studio.unit.y" value="px"/>
+		</element>
+		<element kind="line" uuid="bca33b3c-853e-4535-bb77-9d783421d146" x="2" y="-11" width="556" height="1">
+			<property name="com.jaspersoft.studio.unit.x" value="px"/>
+			<property name="com.jaspersoft.studio.unit.y" value="px"/>
+		</element>
+		<property name="com.jaspersoft.studio.unit.height" value="px"/>
+	</pageHeader>
+	<detail>
+		<band height="515" splitType="Stretch">
+			<element kind="line" uuid="84672dc4-c537-4153-abc7-8034f9b0db92" x="1" y="-39" width="556" height="1">
+				<property name="com.jaspersoft.studio.unit.x" value="px"/>
+				<property name="com.jaspersoft.studio.unit.y" value="px"/>
+			</element>
+			<element kind="line" uuid="0e3ce067-ea4f-4492-bbf4-f402e3f31142" x="557" y="-56" width="1" height="298">
+				<property name="com.jaspersoft.studio.unit.x" value="px"/>
+				<property name="com.jaspersoft.studio.unit.y" value="px"/>
+			</element>
+			<element kind="line" uuid="47f058c3-cfff-4de4-8613-68cad4db1c84" x="1" y="6" width="556" height="1">
+				<property name="com.jaspersoft.studio.unit.x" value="px"/>
+				<property name="com.jaspersoft.studio.unit.y" value="px"/>
+			</element>
+			<element kind="staticText" uuid="ca231aba-1a72-4152-866f-3efd03523fd2" x="8" y="-22" width="32" height="20" fontSize="15.0" bold="true" hTextAlign="Left">
+				<text><![CDATA[S.N.]]></text>
+			</element>
+			<element kind="line" uuid="3c6afe5d-77ab-475a-b521-88607bc81700" x="320" y="-23" width="1" height="232">
+				<property name="com.jaspersoft.studio.unit.x" value="px"/>
+				<property name="com.jaspersoft.studio.unit.y" value="px"/>
+			</element>
+			<element kind="line" uuid="19d2a7cb-62a0-4b06-a3a2-c885a87940a4" x="445" y="-23" width="1" height="311">
+				<property name="com.jaspersoft.studio.unit.x" value="px"/>
+				<property name="com.jaspersoft.studio.unit.y" value="px"/>
+			</element>
+			<element kind="line" uuid="648ae784-272f-4bd1-b4c5-90b20b4766f7" x="374" y="-24" width="1" height="233">
+				<property name="com.jaspersoft.studio.unit.x" value="px"/>
+				<property name="com.jaspersoft.studio.unit.y" value="px"/>
+			</element>
+			<element kind="line" uuid="b2e56def-e9b8-4a49-b50b-d69a7452f049" x="40" y="-23" width="1" height="232">
+				<property name="com.jaspersoft.studio.unit.x" value="px"/>
+				<property name="com.jaspersoft.studio.unit.y" value="px"/>
+			</element>
+			<element kind="line" uuid="65261dc2-17cd-4dee-82e7-e8a892602b7e" x="206" y="-23" width="1" height="232">
+				<property name="com.jaspersoft.studio.unit.x" value="px"/>
+				<property name="com.jaspersoft.studio.unit.y" value="px"/>
+			</element>
+			<element kind="line" uuid="a5c54b6f-f996-4057-a504-0b9cd83121b2" x="270" y="-23" width="1" height="233">
+				<property name="com.jaspersoft.studio.unit.x" value="px"/>
+				<property name="com.jaspersoft.studio.unit.y" value="px"/>
+			</element>
+			<element kind="staticText" uuid="7938788d-3ab5-4f9e-866d-7f579a6d93f8" x="53" y="-21" width="144" height="20" fontSize="14.0" bold="true">
+				<text><![CDATA[Description of Goods]]></text>
+			</element>
+			<element kind="line" uuid="e442c16a-a372-4f01-aaab-aeea7268aeb7" x="1" y="209" width="556" height="1">
+				<property name="com.jaspersoft.studio.unit.x" value="px"/>
+				<property name="com.jaspersoft.studio.unit.y" value="px"/>
+			</element>
+			<element kind="line" uuid="07d84337-894b-46c4-8ee7-9ac53ec7c93a" x="1" y="257" width="556" height="1">
+				<property name="com.jaspersoft.studio.unit.x" value="px"/>
+				<property name="com.jaspersoft.studio.unit.y" value="px"/>
+			</element>
+			<element kind="staticText" uuid="8d6b692e-5bcb-4e93-8159-27e602f49679" x="211" y="-23" width="59" height="38" fontSize="12.0" bold="true">
+				<text><![CDATA[HSN/SAC Code]]></text>
+			</element>
+			<element kind="staticText" uuid="5208fbcf-d2fc-4fb8-a304-321001274d98" x="287" y="-21" width="32" height="20" fontSize="14.0" bold="true">
+				<text><![CDATA[Qty.]]></text>
+			</element>
+			<element kind="staticText" uuid="a21492b4-0e06-497b-90a9-76de43c4f0b7" x="334" y="-20" width="32" height="26" fontSize="14.0" bold="true">
+				<text><![CDATA[Unit]]></text>
+			</element>
+			<element kind="staticText" uuid="7d0a6b95-dd3f-4a8c-bab0-6a12ac93db45" x="391" y="-20" width="40" height="19" fontSize="14.0" bold="true">
+				<text><![CDATA[Price]]></text>
+			</element>
+			<element kind="staticText" uuid="9574597f-0893-4956-9e5e-5dccd688e895" x="467" y="-20" width="80" height="19" fontSize="14.0" bold="true">
+				<text><![CDATA[Amount (`)]]></text>
+			</element>
+			<element kind="staticText" uuid="650ea140-50b4-4ff9-948a-6a0d77bdec21" x="102" y="232" width="120" height="20" fontSize="14.0" italic="true">
+				<text><![CDATA[Add   :   IGST]]></text>
+			</element>
+			<element kind="staticText" uuid="e5229c89-7ee5-4444-89ed-bd5cda989e82" x="344" y="232" width="35" height="20" fontSize="14.0" italic="true">
+				<text><![CDATA[@]]></text>
+			</element>
+			<element kind="line" uuid="fa3bde23-9aaf-45ea-b798-354340b32648" x="445" y="288" width="112" height="1">
+				<property name="com.jaspersoft.studio.unit.x" value="px"/>
+				<property name="com.jaspersoft.studio.unit.y" value="px"/>
+			</element>
+			<element kind="textField" uuid="d6e61e01-ffb9-4d7e-97bd-e99639f66be3" x="449" y="17" width="105" height="70" fontSize="16.0">
+				<paragraph rightIndent="5"/>
+				<expression><![CDATA[$P{totalAmount}]]></expression>
+				<property name="com.jaspersoft.studio.unit.rightIndent" value="px"/>
+			</element>
+			<element kind="textField" uuid="2fadf40a-0223-4bda-af10-ff86ca1047f6" x="449" y="261" width="105" height="26" markup="none" fontSize="16.0">
+				<paragraph rightIndent="5"/>
+				<expression><![CDATA[$P{totalAmount}]]></expression>
+				<property name="com.jaspersoft.studio.unit.rightIndent" value="px"/>
+			</element>
+			<element kind="staticText" uuid="6ef614cf-0953-4a2b-950a-b354acfbdbcf" x="356" y="264" width="90" height="20" fontSize="13.0" bold="true">
+				<text><![CDATA[Grand Total]]></text>
+			</element>
+			<element kind="textField" uuid="9a25059f-8094-472b-85e1-b2f48264d182" x="449" y="234" width="108" height="23" fontSize="14.0">
+				<paragraph rightIndent="5"/>
+				<expression><![CDATA[$P{IGSTAmt}]]></expression>
+				<property name="com.jaspersoft.studio.unit.rightIndent" value="px"/>
+			</element>
+			<element kind="textField" uuid="1a95728f-decd-4f5d-8a3e-4894a3696762" x="449" y="211" width="108" height="23" markup="none" fontSize="15.0" bold="true">
+				<paragraph rightIndent="5"/>
+				<expression><![CDATA[$P{withoutTaxAmt}]]></expression>
+				<property name="com.jaspersoft.studio.unit.firstLineIndent" value="pixel"/>
+				<property name="com.jaspersoft.studio.unit.rightIndent" value="px"/>
+			</element>
+			<element kind="textField" uuid="ae36333c-0029-43f6-bc10-539e063aea48" x="370" y="233" width="62" height="19" fontSize="14.0" italic="true">
+				<expression><![CDATA[$P{GSTPercentage}]]></expression>
+			</element>
+			<element kind="line" uuid="31f68669-2a52-4599-8764-9defd92d8949" x="1" y="503" width="557" height="1">
+				<property name="com.jaspersoft.studio.unit.x" value="px"/>
+				<property name="com.jaspersoft.studio.unit.y" value="px"/>
+			</element>
+			<element kind="line" uuid="5b021140-2569-4e12-bccd-ad1c555c1eab" x="1" y="374" width="556" height="1">
+				<property name="com.jaspersoft.studio.unit.x" value="px"/>
+				<property name="com.jaspersoft.studio.unit.y" value="px"/>
+			</element>
+			<element kind="line" uuid="6a67303b-9bc7-45c6-a448-68a14429414a" x="279" y="374" width="1" height="129">
+				<property name="com.jaspersoft.studio.unit.x" value="px"/>
+				<property name="com.jaspersoft.studio.unit.y" value="px"/>
+			</element>
+			<element kind="line" uuid="af95c62f-6847-42cc-a219-d89866098c51" x="279" y="425" width="279" height="1">
+				<property name="com.jaspersoft.studio.unit.x" value="px"/>
+				<property name="com.jaspersoft.studio.unit.y" value="px"/>
+			</element>
+			<element kind="textField" uuid="01852a38-ca20-4e71-8fb1-c1ec2e1f914b" x="212" y="17" width="58" height="22" fontSize="14.0">
+				<expression><![CDATA[$P{HSN}]]></expression>
+			</element>
+			<element kind="staticText" uuid="eb92c736-2670-4755-9d04-194802cfd613" x="23" y="17" width="16" height="22" fontName="Calibri" fontSize="14.0">
+				<text><![CDATA[1.]]></text>
+			</element>
+			<element kind="textField" uuid="57252543-c6d4-4059-80ba-e4e12cb57574" x="47" y="17" width="150" height="22" fontSize="14.0">
+				<expression><![CDATA[$P{expenseType}]]></expression>
+			</element>
+			<element kind="textField" uuid="4c960c94-0992-4453-ae2b-ba9836dde849" x="66" y="33" width="140" height="27" fontSize="12.0" italic="true">
+				<expression><![CDATA[$P{clientInfo}]]></expression>
+			</element>
+			<element kind="staticText" uuid="e80117f2-a629-4f2b-be20-90ea8c8cba97" x="305" y="17" width="15" height="30" fontSize="13.0">
+				<text><![CDATA[--]]></text>
+			</element>
+			<element kind="staticText" uuid="c7f08fb7-3d70-438e-b954-a56a104dcf8f" x="327" y="17" width="14" height="30" fontSize="13.0">
+				<text><![CDATA[--]]></text>
+			</element>
+			<element kind="staticText" uuid="0fb6aed7-c950-432a-8aca-aea46cec6ffb" x="432" y="17" width="12" height="30" fontSize="13.0">
+				<text><![CDATA[--]]></text>
+			</element>
+			<element kind="staticText" uuid="60e9ed95-1049-43bc-b507-e81fa86145cd" x="8" y="380" width="132" height="16" fontName="Arial" fontSize="13.0" bold="true" underline="false">
+				<paragraph lineSpacingSize="1.0"/>
+				<text><![CDATA[Terms & Conditions]]></text>
+			</element>
+			<element kind="staticText" uuid="73fcbd1d-5c0c-46b6-9524-c3f2a2586121" x="9" y="397" width="114" height="20" fontName="SansSerif" fontSize="15.0">
+				<text><![CDATA[E.& O.E.]]></text>
+			</element>
+			<element kind="staticText" uuid="7b4feb6b-f464-449c-8828-392a12eb1b1c" x="7" y="446" width="251" height="51" markup="none" fontName="SansSerif" fontSize="12.0" vTextAlign="Top">
+				<paragraph lineSpacing="Single" lineSpacingSize="1.5"/>
+				<text><![CDATA[1. Interest @ 18% p.a. will be charged if the     payment is not made with in the stipulated time
+2. Subject to 'Haryana' Jurisdiction only.]]></text>
+			</element>
+			<element kind="staticText" uuid="1a4e49b3-6bbb-47f8-a7c9-24e1e1835f24" x="283" y="377" width="176" height="20" fontSize="12.0" bold="true">
+				<text><![CDATA[Receiver's Signature   :  ]]></text>
+			</element>
+			<element kind="staticText" uuid="26dd0420-1529-4ce0-a5b3-462d07b0b33f" x="366" y="431" width="188" height="27" fontSize="14.0" bold="true">
+				<text><![CDATA[for OMKAR JOURNEYS LLP]]></text>
+			</element>
+			<element kind="staticText" uuid="eb0723e8-7212-4382-a97f-aaa04402c597" x="420" y="479" width="134" height="20" fontSize="13.0" bold="true">
+				<text><![CDATA[Authorised Signatory]]></text>
+			</element>
+			<element kind="staticText" uuid="2acc0367-70a2-458e-8075-5bb16b89afc6" x="8" y="351" width="55" height="22" fontSize="13.0" bold="true">
+				<text><![CDATA[Rupees]]></text>
+			</element>
+			<element kind="textField" uuid="62b50361-1a12-4da2-b670-d187ed3d44a5" x="64" y="351" width="476" height="23" markup="none" fontSize="13.0" bold="true">
+				<expression><![CDATA[$P{amountInWords}]]></expression>
+			</element>
+			<element kind="staticText" uuid="d10dddf4-bf08-41b7-ae08-ea6f37d67c77" x="8" y="292" width="538" height="20" fontSize="12.0" bold="true" underline="false">
+				<text><![CDATA[HSN/SAC     Tax Rate     Taxable Amt.     IGST Amt.     Total Tax]]></text>
+			</element>
+			<element kind="textField" uuid="36eb48f1-5ec0-4436-939a-5818e6d31f37" x="9" y="310" width="56" height="20" fontSize="13.0">
+				<expression><![CDATA[$P{HSN}]]></expression>
+			</element>
+			<element kind="textField" uuid="ed8e21ad-4d2c-45f6-9399-83560089eb4d" x="81" y="310" width="41" height="20" fontSize="13.0">
+				<expression><![CDATA[$P{taxRate}]]></expression>
+			</element>
+			<element kind="textField" uuid="c6720161-ca53-4e92-9f41-303d58534acd" x="145" y="310" width="93" height="19" fontSize="13.0">
+				<expression><![CDATA[$P{taxableAmount}]]></expression>
+			</element>
+			<element kind="textField" uuid="2bef404a-3045-48cf-8db5-305ce4cccba8" x="238" y="310" width="67" height="20" fontSize="13.0">
+				<expression><![CDATA[$P{IGSTAmt}]]></expression>
+			</element>
+			<element kind="textField" uuid="4417e42d-ded5-4c3a-8148-7e096ff8a74c" x="317" y="310" width="106" height="20" fontSize="13.0">
+				<expression><![CDATA[$P{IGSTAmt}]]></expression>
+			</element>
+			<element kind="line" uuid="7028630e-b585-4feb-b899-14ea3cf6bc3d" x="1" y="237" width="1" height="266">
+				<property name="com.jaspersoft.studio.unit.x" value="px"/>
+				<property name="com.jaspersoft.studio.unit.y" value="px"/>
+			</element>
+			<element kind="line" uuid="c30e7208-35cb-4d1c-a384-bffd5dfaedc0" x="557" y="241" width="1" height="262">
+				<property name="com.jaspersoft.studio.unit.x" value="px"/>
+				<property name="com.jaspersoft.studio.unit.y" value="px"/>
+			</element>
+			<element kind="line" uuid="eeccf6eb-b406-4670-bfb8-a91de2826f10" x="1" y="-28" width="1" height="267">
+				<property name="com.jaspersoft.studio.unit.x" value="px"/>
+				<property name="com.jaspersoft.studio.unit.y" value="px"/>
+			</element>
+			<element kind="line" uuid="bfe94802-9c9b-460a-a4b0-4bc4488374a7" x="9" y="307" width="362" height="1">
+				<property name="com.jaspersoft.studio.unit.x" value="px"/>
+				<property name="com.jaspersoft.studio.unit.y" value="px"/>
+			</element>
+			<element kind="line" uuid="6cd4fa1a-b9f6-4e2c-bf4d-f7c95554a2ba" x="10" y="396" width="119" height="1">
+				<property name="com.jaspersoft.studio.unit.x" value="px"/>
+				<property name="com.jaspersoft.studio.unit.y" value="px"/>
+				<pen lineWidth="0.5"/>
+			</element>
+		</band>
+	</detail>
+</jasperReport>
+
