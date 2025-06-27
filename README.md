@@ -56,3 +56,44 @@ The project includes a custom formatter:
 ```java
 public static String formatIndianNumber(double value);
 
+## 🇮🇳 Indian Number Format Support
+
+It ensures numbers are printed in the Indian style:
+
+✅ `1234567.00` → `12,34,567.00`  
+✅ `328500.00` → `3,28,500.00`
+
+---
+
+## 🖨️ JasperReports Styling
+
+- **Fonts**: `SansSerif`, `Arial`  
+- **Font Styles**: **Bold**, *Italic*, and <u>Underline</u> supported  
+- **Pattern for currency**: `#,##,##0.00`
+
+---
+
+## 🔧 Technologies Used
+
+- 🧰 **Spring Boot**
+- 🧾 **JasperReports 7.0.3**
+- 📊 **Apache POI** (Excel parsing)
+- 💡 **Java 17+**
+
+---
+
+## 🛠️ Setup Instructions
+
+### 1. Clone the Repository
+
+```bash
+git clone https://github.com/your-username/invoice-generator.git
+cd invoice-generator
+
+
+---
+
+## 👨‍💻 Author
+
+**Developed by Omkar Kumar**
+
