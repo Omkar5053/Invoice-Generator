@@ -99,5 +99,5 @@ cd invoice-generator
 
 ## 👨‍💻 Author
 
-**Developed by Omkar Kumar**
+**Developed by Omkar Singh**
 
